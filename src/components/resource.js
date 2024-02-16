@@ -26,7 +26,7 @@ function Resource_main (){
     });
 
     useEffect(() => {
-        fetch('http://89.116.21.45:8000/api/resource')
+        fetch('https://89.116.21.45:8000/api/resource')
         .then(res => res.json())
         .then(data => {
           setResources(data)
