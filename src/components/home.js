@@ -174,7 +174,7 @@ export default function Home() {
         const [usernameError, setUsernameError] = useState(false);
       
         const checkEmailAvailability = () => {
-          fetch(`http://89.116.21.45:8000/api/check_email/?email=${registerForm.email}`)
+          fetch(`https://89.116.21.45:8000/api/check_email/?email=${registerForm.email}`)
               .then(response => response.json())
               .then(data => {
                   if (data.is_taken) {
@@ -187,7 +187,7 @@ export default function Home() {
       }
       
       const checkUsernameAvailability = () => {
-          fetch(`http://89.116.21.45:8000/api/check_username/?username=${registerForm.username}`)
+          fetch(`https://89.116.21.45:8000/api/check_username/?username=${registerForm.username}`)
               .then(response => response.json())
               .then(data => {
                   if (data.is_taken) {
