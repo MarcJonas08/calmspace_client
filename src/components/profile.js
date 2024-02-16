@@ -21,7 +21,7 @@ export default function Profile() {
 
 async function updateProfileInfo(user, authTokens, profileInfo) {
     try {
-        const response = await fetch('http://89.116.21.45:8000/api/update-profile/', {
+        const response = await fetch('https://89.116.21.45:8000/api/update-profile/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
