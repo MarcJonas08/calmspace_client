@@ -11,7 +11,7 @@ export default function Nav(props) {
     const [branches, setBranches] = useState([])
 
     useEffect(() => {
-        fetch('http://89.116.21.45:8000/api/clinic/branches',{
+        fetch('https://89.116.21.45:8000/api/clinic/branches',{
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${authTokens.access}`,
@@ -28,7 +28,7 @@ export default function Nav(props) {
   
       useEffect(() => {
     
-        fetch('http://89.116.21.45:8000/api/clinic/doctors', {
+        fetch('https://89.116.21.45:8000/api/clinic/doctors', {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${authTokens.access}`,
@@ -45,7 +45,7 @@ export default function Nav(props) {
       const [doctorAppointments, setDoctorAppointments] = useState([]);
   
       useEffect(() => {
-            fetch('http://89.116.21.45:8000/api/clinic/appointments', {
+            fetch('https://89.116.21.45:8000/api/clinic/appointments', {
               method: 'GET',
               headers: {
                 'Authorization': `Bearer ${authTokens.access}`,
@@ -62,7 +62,7 @@ export default function Nav(props) {
       const [doctorAdvanceAppointments, setDoctorAdvanceAppointments] = useState([]);
   
       useEffect(() => {
-            fetch('http://89.116.21.45:8000/api/clinic/advance-appointments', {
+            fetch('https://89.116.21.45:8000/api/clinic/advance-appointments', {
               method: 'GET',
               headers: {
                 'Authorization': `Bearer ${authTokens.access}`,
