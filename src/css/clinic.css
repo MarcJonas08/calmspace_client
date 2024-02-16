@@ -1,0 +1,1160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background: #23005a; 
+    border-radius: 6px;
+}
+
+/*button for hero*/
+.btn-mn {
+    background-color: lightcoral;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    width: 100px;
+    animation: bn53bounce 4s infinite;
+    cursor: pointer;
+  }
+  
+  @keyframes bn53bounce {
+    5%,
+    50% {
+      transform: scale(1);
+    }
+  
+    10% {
+      transform: scale(1);
+    }
+  
+    15% {
+      transform: scale(1);
+    }
+  
+    20% {
+      transform: scale(1) rotate(-5deg);
+    }
+  
+    25% {
+      transform: scale(1) rotate(5deg);
+    }
+  
+    30% {
+      transform: scale(1) rotate(-3deg);
+    }
+  
+    35% {
+      transform: scale(1) rotate(2deg);
+    }
+  
+    40% {
+      transform: scale(1) rotate(0);
+    }
+  }
+
+
+/*regular button*/
+.button {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: lightcoral;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+
+.popup-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(112, 128, 144, 0.2);
+    backdrop-filter: blur(2px);
+    z-index: 100;
+    display: flex;
+}
+
+.clinic-container{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.clinic-wrapper{
+    display: flex;
+    width: 80%;
+
+    
+}
+
+.clinic-container.hero{
+    height: 80vh;
+}
+.clinic-wrapper.hero{
+    justify-content: center;
+}
+.clinic-wrapper.hero > div{
+    width: 50%;
+}
+.clinic-hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.clinic-hero-text > h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 55px;
+}
+.clinic-hero-text > p{
+    margin-top: 10px;
+    font-style: italic;
+}
+.clinic-hero-text > button{
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 15px 15px;
+    cursor: pointer;
+    width: fit-content;
+} 
+.clinic-hero-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.clinic-hero-img > img{
+    width: 600px;
+}
+
+
+
+.clinic-container.tutorial{
+    background-image: linear-gradient(to right, #5d9add, #9294f2);
+    padding: 40px 0;
+    position: relative;
+}
+
+
+.clinic-wrapper.tutorial{
+    justify-content: space-between;
+}
+.clinic-tutorial-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.clinic-tutorial-text .clinic-big{
+    color: white;
+    font-size: 40px;
+}
+.clinic-tutorial-text .clinic-small{
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+}
+.clinic-tutorial-img{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.clinic-tut-box{
+    background-color: white;    
+    border-radius: 10px;
+    height: 150px;
+    width: 180px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.clinic-tut-box > img{
+    width: 50px;
+}
+.clinic-tut-box > p{
+    text-align: center;
+}
+
+
+
+
+.clinic-container.services{
+    margin-top: 40px;
+}
+.clinic-wrapper.services{
+    flex-direction: column;
+    align-items: center;
+}
+.clinic-wrapper.services > div{
+    width: 100%;
+}
+.clinic-services-text p{
+    font-size: 40px;
+    border-bottom: 1px solid darkgray;
+}
+.clinic-services-text p span{
+    color: lightcoral;
+}
+.clinic-services-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.clinic-services-img > p{
+    text-align: center;
+    width: 75%;
+    font-size: 18px;
+}
+
+
+.clinic-container.appoint{
+    background-image: linear-gradient(to right, #9294f2, #5d9add);
+}
+.clinic-wrapper.appoint{
+    justify-content: center;
+}
+.clinic-wrapper.appoint > div{
+    padding: 30px;
+    width: 65%;
+    align-items: center;
+}
+.clinic-appoint-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.clinic-appoint-text p{
+    color: white;   
+    text-align: center;
+    font-size: 18px;
+}
+.clinic-appoint-text button{
+    color: white;   
+    text-align: center;
+    font-size: 16px;
+
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: transparent;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.clinic-appoint-text button:hover{
+    color: black;
+    background-color: white;
+    transition: ease 0.4s;
+}
+.clinic-appoint-text button:not(:hover){
+    color: white;
+    background-color: transparent;
+    transition: ease 0.4s;
+}
+
+
+.clinic-container.aboutUs{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.clinic-wrapper.aboutUs{
+    flex-direction: column;
+    align-items: center;
+}
+.clinic-wrapper.aboutUs > div{
+    width: 100%;
+}
+.clinic-aboutUs-text p{
+    font-size: 40px;
+    border-bottom: 1px solid darkgray;
+}
+.clinic-aboutUs-text p span{
+    color: lightcoral;
+}
+.clinic-aboutUs-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 70px;
+}
+.about-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+}
+.about-main > div{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about-main > div p:nth-child(1){
+    font-size: 30px;
+}
+.about-main > div p:nth-child(2){
+    font-size: 18px;
+}
+.about-main img{
+    width: 400px;
+}
+
+.about-location{
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 30px;
+}
+.about-location > p{
+    align-self: center;
+    font-size: 30px;
+}
+.location-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.location-container > div{
+    border: 1px solid #5d9add;
+    border-radius: 5px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.location-container > div p:nth-child(1){
+    font-size: 25px;
+}
+.location-container > div p:nth-child(2){
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.clinic-container.footer{
+    background-image: linear-gradient(to right, #5d9add, #9294f2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10%;
+}
+.clinic-container.footer > div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    height: 200px;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+.footer-logo > img{
+    width: 100px;
+}
+.footer-logo > h1{
+    color: white;
+    text-align: center;
+}
+
+.footer-contacts{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-contacts > h2{
+    color: white;
+    margin-bottom: 20px;
+}
+.footer-contacts > a{
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+
+    font-size: 18px;
+}
+
+.footer-links{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-links > h2{
+    color: white;
+    margin-bottom: 20px;
+}
+.footer-links > a{
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+
+    font-size: 18px;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    background-image: linear-gradient(to right, #5d9add, #9294f2);
+
+}
+.copyright > div{
+    height: 0;
+    width: 50%;
+
+    border: 1px solid white;
+}
+.copyright > p{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.notif-popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 50%;
+    height: 60vh;
+
+    background-color: white;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+    padding: 30px;
+    border-radius: 15px;
+
+    z-index: 100;
+
+}
+.notif-img{
+    width: 45%;
+    height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.notif-img img{
+    width: 100%;
+}
+.notif-mid{
+    height: 75%;
+    border: 1px solid lightgray;
+}
+.notif-text{
+    width: 45%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+.notif-text > p:nth-child(1){
+    font-size: 25px;
+    text-align: center;
+}
+.notif-text > p:nth-child(2){
+    font-size: 18px;
+    text-align: center;
+}
+.notif-text > p:nth-child(3){
+    font-size: 18px;
+    text-align: center;
+}
+.notif-text > button{
+    width: max-content;
+    margin-top: 10px;
+    align-self: center;
+    padding: 15px 20px;
+    background-color: lightcoral;
+    font-size: 15px;
+}
+.notif-text > button a{
+    text-decoration: none;
+    color: white;
+}
+
+.notif-choices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 10px;
+}
+.notif-choice-1{
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.notif-choice-1 > p{
+    text-align: center;
+    font-size: 16px;
+}
+.notif-choice-1 > button{
+    padding: 10px 20px;
+    color: white;
+    background-color: lightcoral;
+}
+.notif-choice-1 > button a{
+    text-decoration: none;
+    color: white;
+}
+.notif-choice-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+    gap: 10px;
+}
+.notif-choice-2 > p{
+    text-align: center;
+    font-size: 16px;
+}
+.notif-choice-2 > button{
+    padding: 10px 20px;
+    color: white;
+    background-color: lightcoral;
+}
+
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 300px;
+}
+.item-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    width: 90%;
+    height: 90%;
+    background-color: white;
+
+    border: 2px solid lightgray;
+    border-radius: 8px;
+
+    padding: 20px;
+}
+.item-wrapper img{
+    width: 100px;
+}
+.item-wrapper h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.nav-login-bg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 100%;
+    width: 100%;
+    background-color: rgba(112, 128, 144, 0.2);
+    backdrop-filter: blur(2px);
+    z-index: 100;
+    display: none;
+}
+
+/*Responsiveness*/
+
+@media screen and (min-width: 1020px) and (max-width: 1500px) {
+    .clinic-hero-text > h1{
+        font-size: 40px;
+    }
+    .clinic-hero-img > img{
+        width: 400px;
+    }
+
+
+    .clinic-container.tutorial{
+        background-image: linear-gradient(to right, #5d9add, #9294f2);
+        padding: 40px 0;
+        position: relative;
+    }
+    
+    
+    .clinic-wrapper.tutorial{
+        width: 90%;;
+    }
+    .clinic-tutorial-text .clinic-big{
+        font-size: 30px;
+    }
+    .clinic-tutorial-text .clinic-small{
+        font-size: 16px;
+    }
+    .clinic-tutorial-img{
+        width: 60%;
+    }
+}
+@media screen and (min-width: 721px) and (max-width: 1019px) {
+    .notif-popup{
+        width: 90%;
+        height: 90vh;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .notif-img{
+        width: 40%;
+        height: 40%;
+    }
+    .notif-mid{
+        height:0%;
+        width: 75%;
+    }
+    .notif-text{
+        width: 95%;
+    }
+    .notif-text > p:nth-child(1){
+        font-size: 20px;
+        text-align: center;
+    }
+    .notif-text > p:nth-child(2){
+        font-size: 16px;
+        text-align: center;
+    }
+    .notif-text > p:nth-child(3){
+        font-size: 16px;
+        text-align: center;
+    }
+    .notif-text > button{
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    .notif-text > button a{
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+    }
+    
+    .notif-choice-1{
+        width: 95%;
+    }
+    .notif-choice-1 > p{
+        text-align: center;
+        font-size: 16px;
+    }
+    .notif-choice-1 > button a{
+        font-size: 12px;
+    }
+    .notif-choice-2 > p{
+        font-size: 16px;
+    }
+    .notif-choice-2 > button{
+        font-size: 12px;
+    }
+
+
+    .item{
+        height: 300px;
+    }
+    .item-wrapper img{
+        width: 90px;
+    }
+    .item-wrapper h2{
+        font-size: 18px;
+    }
+
+    .clinic-services-img > p{
+        width: 100%;
+        font-size: 16px;
+    }
+
+
+    .clinic-wrapper.hero{
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .clinic-wrapper.hero > div{
+        width: 100%;
+    }
+    .clinic-hero-text{
+        align-items: center;
+        gap: 10px;
+    }
+    .clinic-hero-text > h1{
+        font-size: 45px;
+        text-align: center;
+    }
+    .clinic-hero-text > p{
+        width: 80%;
+        text-align: center;
+        font-size: 16px;
+    }
+    .clinic-hero-text > button{
+        font-size: 12px;
+        padding: 15px 15px;
+    } 
+    .clinic-hero-img {
+        display: none;
+    }
+
+
+    .clinic-wrapper.tutorial{
+        align-items: center;
+        justify-content: center;
+
+        flex-direction: column;
+        width: 90%;
+
+        gap: 20px;
+    }
+    .clinic-tutorial-text{
+        width: 100%;
+        align-items: center;
+    }
+    .clinic-tutorial-text .clinic-big{
+        font-size: 30px;
+        text-align: center;
+    }
+    .clinic-tutorial-text .clinic-small{
+        font-size: 16px;
+        text-align: center;
+        margin-top: 5px;
+    }
+    .clinic-tutorial-img{
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+    }
+    .clinic-tut-box{
+        height: 150px;
+        width: 150px;
+    }
+    .clinic-tut-box > img{
+        width: 35px;
+    }
+    .clinic-tut-box > p{
+        width: 95%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+
+    .clinic-services-text p{
+        font-size: 35px;
+    }
+    .clinic-aboutUs-text p{
+        font-size: 35px;
+    }
+
+
+    .clinic-wrapper.appoint{
+        width: 100%;
+    }
+    .clinic-wrapper.appoint > div{
+        width: 80%;
+    }
+    .clinic-appoint-text p{
+        width: 100%;
+        font-size: 16px;
+    }
+    .clinic-appoint-text button{
+        font-size: 12px;
+    }
+
+
+    .clinic-container.footer{
+        background-image: linear-gradient(to right, #5d9add, #9294f2);
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .clinic-container.footer > div{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 150px;
+    }
+    .footer-logo{
+        display: none;
+    }
+    
+    .footer-contacts > h2{
+        font-size: 18px;
+    }
+    .footer-contacts > a{
+        font-size: 15px;
+    }
+    
+    .footer-links > h2{
+        font-size: 18px;
+    }
+    .footer-links > a{
+        font-size: 15px;
+    }
+
+    .copyright > div{
+        width: 60%;
+    }
+    .copyright > p{
+        font-size: 15px;
+    }
+
+
+    .about-main{
+        margin-top: 40px;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .about-main > div{
+        width: 80%;
+    }
+    .about-main > div p:nth-child(1){
+        font-size: 25px;
+        text-align: center;
+    }
+    .about-main > div p:nth-child(2){
+        font-size: 16px;
+        text-align: center;
+    }
+    .about-main img{
+        width: 150px;
+    }
+    
+    .about-location{
+        width: 100%;
+        gap: 10px;
+    }
+    .about-location > p{
+        font-size: 25px;
+    }
+    .location-container{
+        gap: 10px;
+    }
+    .location-container > div{
+        padding: 15px;
+    }
+    .location-container > div p:nth-child(1){
+        font-size: 25px;
+    }
+    .location-container > div p:nth-child(2){
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .notif-popup{
+        width: 95%;
+        height: 95vh;
+        flex-direction: column;
+        border-radius: 10px;
+
+    }
+    .notif-img{
+        width: 40%;
+        height: 40%;
+    }
+    .notif-mid{
+        height:0%;
+        width: 75%;
+    }
+    .notif-text{
+        width: 95%;
+    }
+    .notif-text > p:nth-child(1){
+        font-size: 16px;
+        text-align: center;
+    }
+    .notif-text > p:nth-child(2){
+        font-size: 12px;
+        text-align: center;
+    }
+    .notif-text > p:nth-child(3){
+        font-size: 12px;
+        text-align: center;
+    }
+    .notif-text > button{
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+    .notif-text > button a{
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+    }
+    
+    .notif-choice-1{
+        width: 95%;
+    }
+    .notif-choice-1 > p{
+        text-align: center;
+        font-size: 12px;
+    }
+    .notif-choice-1 > button a{
+        font-size: 10px;
+    }
+    .notif-choice-2 > p{
+        font-size: 12px;
+    }
+    .notif-choice-2 > button{
+        font-size: 10px;
+    }
+
+
+    .item{
+        height: 250px;
+    }
+    .item-wrapper img{
+        width: 70px;
+    }
+    .item-wrapper h2{
+        font-size: 16px;
+    }
+
+
+    .clinic-services-img > p{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .clinic-wrapper.hero{
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .clinic-wrapper.hero > div{
+        width: 100%;
+    }
+    .clinic-hero-text{
+        align-items: center;
+        gap: 10px;
+    }
+    .clinic-hero-text > h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .clinic-hero-text > p{
+        width: 80%;
+        text-align: center;
+        font-size: 12px;
+    }
+    .clinic-hero-text > button{
+        font-size: 10px;
+        padding: 15px 15px;
+    } 
+    .clinic-hero-img {
+        display: none;
+    }
+
+
+    .clinic-wrapper.tutorial{
+        align-items: center;
+        justify-content: center;
+
+        flex-direction: column;
+        width: 90%;
+
+        gap: 20px;
+    }
+    .clinic-tutorial-text{
+        width: 100%;
+        align-items: center;
+    }
+    .clinic-tutorial-text .clinic-big{
+        font-size: 20px;
+        text-align: center;
+    }
+    .clinic-tutorial-text .clinic-small{
+        font-size: 12px;
+        text-align: center;
+        margin-top: 5px;
+    }
+    .clinic-tutorial-img{
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+    .clinic-tut-box{
+        height: 100px;
+        width: 100px;
+    }
+    .clinic-tut-box > img{
+        width: 25px;
+    }
+    .clinic-tut-box > p{
+        width: 95%;
+        text-align: center;
+        font-size: 10px;
+    }
+
+
+    .clinic-services-text p{
+        font-size: 25px;
+    }
+    .clinic-aboutUs-text p{
+        font-size: 25px;
+    }
+
+
+
+    .clinic-wrapper.appoint{
+        width: 100%;
+    }
+    .clinic-wrapper.appoint > div{
+        width: 100%;
+    }
+    .clinic-appoint-text p{
+        width: 100%;
+        font-size: 12px;
+    }
+    .clinic-appoint-text button{
+        font-size: 10px;
+    }
+
+
+    .clinic-container.footer{
+        background-image: linear-gradient(to right, #5d9add, #9294f2);
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .clinic-container.footer > div{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 100px;
+    }
+    .footer-logo{
+        display: none;
+    }
+    
+    .footer-contacts > h2{
+        font-size: 16px;
+    }
+    .footer-contacts > a{
+        font-size: 12px;
+    }
+    
+    .footer-links > h2{
+        font-size: 16px;
+    }
+    .footer-links > a{
+        font-size: 12px;
+    }
+
+    .copyright > div{
+        width: 60%;
+    }
+    .copyright > p{
+        font-size: 12px;
+    }
+
+
+    .about-main{
+        margin-top: 40px;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .about-main > div{
+        width: 80%;
+    }
+    .about-main > div p:nth-child(1){
+        font-size: 20px;
+        text-align: center;
+    }
+    .about-main > div p:nth-child(2){
+        font-size: 12px;
+        text-align: center;
+    }
+    .about-main img{
+        width: 150px;
+    }
+    
+    .about-location{
+        width: 100%;
+        gap: 10px;
+    }
+    .about-location > p{
+        font-size: 20px;
+    }
+    .location-container{
+        gap: 10px;
+    }
+    .location-container > div{
+        padding: 15px;
+    }
+    .location-container > div p:nth-child(1){
+        font-size: 20px;
+    }
+    .location-container > div p:nth-child(2){
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,304 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    button{font-family: 'Gabarito', sans-serif;}
+
+    .profile{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-h1{
+        font-size: 20px;
+        align-self: flex-start;
+        padding: 10px 20px;
+        background-color: #5d9add;
+        color: white;
+        border-radius: 5px 5px 0 0;
+        border-top: 1px solid darkgray ;
+        border-left: 1px solid darkgray;
+        border-right: 1px solid darkgray;
+
+        transform: translateY(1px);
+    }
+    .main-profile{
+        width: 100%;
+        margin-top: 0px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-top: 1px solid darkgray;
+    }
+
+
+    .general-info{
+        padding: 40px 0;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .gen-info-wrapper{
+        width: 70%;
+    }
+    .profile-form-group{
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-form-row{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .profile-form-group.row{
+        display: flex;
+        flex-direction: column;
+
+        width: 50%;
+    }
+    .profile-form-group.row > label, .profile-form-group > label{
+        margin-bottom: 8px;
+    }
+    .profile-form-group.row > input, .profile-form-group > input{
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+
+        border: 1px solid darkgray;
+    }
+    
+
+
+    .password-change{
+        border-top: 1px solid darkgray;
+        padding: 50px 20px;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+    .pw-chng-form{
+        width: 40%;
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .pw-chng-texts{
+        width: 40%;
+        padding: 20px;
+        color: darkgray;
+
+    }
+    .small-text-head{
+        font-size: 18px;
+    }
+    .small-text{
+        margin-top: 10px;
+    }
+    .small-text li{
+        margin-left: 25px;
+    }
+
+
+
+    .profile-actions{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .profile-actions a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        padding: 13px 20px;
+        height: 100%;
+        border-radius: 8px;
+        background-color: rgb(165, 24, 24);
+    
+    }
+    .profile-actions button{
+        padding: 13px 20px;
+        background-color: #5d9add;
+        color: white;
+        border: none;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .profile-form-group-pw{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-bottom: 25px;
+    }
+    .profile-form-group-pw > label{
+        margin-bottom: 8px;
+    }
+    .profile-form-group-pw > input{
+        padding: 8px;
+        font-size: 18px;
+        border-radius: 5px;
+
+        border: 1px solid darkgray;
+    }
+
+
+    /*Responsiveness*/
+
+@media screen and (min-width: 1020px) and (max-width: 1500px) {
+    .left-nav{
+        width: 80%;
+    }
+    .right-nav{
+        width: 20%;
+    }
+
+    
+
+
+}
+@media screen and (min-width: 721px) and (max-width: 1019px) {
+    
+
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .left-nav ul{
+        display: none;
+    }
+    .right-nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: flex;
+    }
+
+
+    .h1{
+        font-size: 20px;    
+    }
+    .gen-info-wrapper{
+        width: 90%;
+    }
+    .password-change{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .pw-chng-form{
+        width: 90%;
+        align-items: center;
+    }
+    .pw-chng-texts{
+        width: 80%;
+    }
+    .profile-form-group-pw > input{
+        font-size: 16px;
+    }
+
+    button{
+        font-size: 15px;
+    }
+    .profile-h1{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .left-nav ul{
+        display: none;
+    }
+    .left-nav h1{
+        font-size: 12px;
+    }
+    .right-nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: flex;
+    }
+
+    .mb-nav-main{
+        width: 60%;
+    }
+
+    
+    .profile{
+        width: 100%;
+        padding: 10px;
+    }
+    .h1{
+        font-size: 20px;
+    }
+
+    .general-info{
+        padding: 30px 0;
+    }
+    .gen-info-wrapper{
+        width: 90%;
+    }
+    .profile-form-group{
+        margin-bottom: 20px;
+    }
+    .profile-form-row{
+        gap: 10px;
+    }
+    .profile-form-group.row > label, .profile-form-group > label{
+        font-size: 15px;
+    }
+    .profile-form-group.row > input, .profile-form-group > input{
+        font-size: 14px;
+    }
+
+    .password-change{
+        gap: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pw-chng-form{
+        width: 100%;
+        padding: 0px;
+        align-items: center;
+    }
+    .pw-chng-texts{
+        width: 100%;
+        padding: 0px;
+    }
+    .small-text-head{
+        font-size: 16px;
+    }
+
+    .profile-form-group-pw > label{
+        font-size: 15px;
+    }
+    .profile-form-group-pw > input{
+        font-size: 14px;
+    }
+    button{
+        font-size: 12px;
+    }
+    .profile-h1{
+        font-size: 15px;
+    }
+}
+

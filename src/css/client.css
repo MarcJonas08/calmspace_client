@@ -1,0 +1,604 @@
+.no-scroll {
+    overflow: hidden;
+}
+
+button{
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.filter-button{
+    background-color: lightcoral;
+    width: 100px;
+}
+.filter-button.clear{
+    width: max-content;
+}
+.filter-button.cmplt-client{
+    border-radius: 5px 5px 0 0;
+}
+.tbl-actn-details{
+    background-color: rgb(18, 18, 155);
+}
+.tbl-actn-complete{
+    background-color: rgb(12, 138, 12);
+}
+.tbl-actn-cancel{
+    background-color: rgb(173, 18, 18);
+}
+.confirmation-btn-yes{
+    background-color: rgb(12, 138, 12);
+}
+.confirmation-btn-no{
+    background-color: rgb(173, 18, 18);
+}
+
+.confirmation-btn-yes:disabled{
+    background-color: rgb(122, 206, 122);
+    cursor: not-allowed;
+}
+
+
+.create-client {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 90vh;
+    width: 50%;
+
+    padding: 40px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    gap: 15px;
+    overflow: scroll;
+
+    background-color: white;
+    border-radius: 15px;
+    z-index: 100;
+  }
+  .select-doctor{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .select-doctor p{
+    font-size: 20px;
+  }
+  .appointment{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .appointment p{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .appointment .scheds{
+    display: flex;
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
+  }
+  
+  
+  .create-client button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .create-client button:focus {
+    outline: none;
+  }
+
+  .sched-btns{
+    background-color: #5d9add;
+  }
+  .sched-btns:disabled{
+    background-color: #b5d2f1;
+    cursor: not-allowed;
+  }
+  
+  .create-client form {
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+  }
+  .create-client form p{
+    font-size: 20px;
+    align-self: flex-start;
+  }
+  .create-client form input[type='text'],
+  .create-client form input[type='number'],
+  .create-client form input[type='email'],
+  .create-client form input[type='date'],
+  .create-client form select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+
+  .create-client form textarea{
+    width: 100%;
+    height: 150px;
+  }
+
+  .create-client .name,
+  .create-client .contacts,
+  .create-client .address{
+    width: 49%;
+  }
+
+
+  .multi-inputs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+  }
+  .one-input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .demographs{
+    display: flex;
+    flex-direction: column;
+
+    width: 32%;
+  }
+
+  .form-actions{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .create-client .confirmation-popup{
+    z-index: 200;
+  }
+
+  .client-details{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+
+    background-color: white;
+
+    padding: 20px;
+    height: 90vh;
+    width: 50%;
+    border-radius: 15px;
+
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column; /* Ensure the container is a column layout */
+
+  }
+
+  .client-details h2{
+    margin-bottom: 30px;
+  }
+
+  .client-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .client-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .client-table td:first-child {
+    width: 30%;
+    font-weight: bold;
+  }
+
+  .client-details > button{
+    width: max-content;
+    align-self: center;
+
+    margin-top: 40px;
+  }
+
+
+  
+  .notes-section {
+    margin-top: 20px;
+    max-width: 100%; /* Adjust the maximum width as needed */
+
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .notes-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .notes-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .notes-section li {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    word-wrap: break-word; /* Allow long words to break and wrap */
+  }
+  
+  .notes-section li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .notes-section label{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+  }
+  .notes-section label textarea{
+    padding: 10px;
+    height: 150px;
+    font-size: 16px;
+  }
+  .notes-section > button{
+    align-self: flex-end;
+  }
+  
+  
+  .client-details button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .client-details button:hover {
+    background-color: #0056b3;
+  }
+
+
+  .confirmation-popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    height: 250px;
+    width: 400px;
+
+    z-index: 1000;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+    padding: 20px;
+
+    box-shadow: 1px 3px 5px 2px rgba(59,59,59,0.55);
+    -webkit-box-shadow: 1px 3px 5px 2px rgba(59,59,59,0.55);
+    -moz-box-shadow: 1px 3px 5px 2px rgba(59,59,59,0.55);
+}
+.confirmation-popup-content{
+    width: 95%;
+    height: 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.confirmation-popup-content p{
+    text-align: center;
+    font-size: 18px;
+}
+.confirmation-buttons{
+    display: flex;
+    gap: 10px;
+}
+.confirmation-buttons button{
+    padding: 15px 20px;
+}
+.confirmation-popup.doctor{
+    height: 250px;
+    width: 450px;
+}
+
+
+  
+/*Responsiveness*/
+
+@media screen and (min-width: 1020px) and (max-width: 1500px) {
+    .create-client{
+        width: 70%;
+    }
+}
+@media screen and (min-width: 721px) and (max-width: 1019px) {
+    .client-main > h1{
+        font-size: 25px;
+    }
+    .client-table-filter{   
+        font-size: 14px;
+    }
+    input[type="text"] {
+        font-size: 14px;
+    }
+    input[type="date"] {
+        font-size: 14px;
+    }
+    .client-main-table > table th:nth-child(2), .client-main-table > table td:nth-child(2){
+        display: none;
+    }
+    .client-main-table > table th:nth-child(3), .client-main-table > table td:nth-child(3){
+        display: none;
+    }
+    .client-pagination > ul li{
+        font-size: 14px;
+    }
+
+
+    .client-details{
+        width: 75%;
+    }
+    .client-details h2{
+        font-size: 20px;
+    }
+    .client-table{
+        font-size: 15px;
+    }
+    .notes-section h3{
+        font-size: 20px;
+    }
+    .notes-section ul{
+        font-size: 15px;
+    }
+    .client-details > button{
+        font-size: 13px;
+    }
+    .notes-section > button{
+        font-size: 13px;
+    }
+    .table-actions button{
+        font-size: 12px;
+        padding: 8px, 5px;
+    }
+
+    .create-client{
+        width: 75%;
+    }
+    .create-client p{
+        font-size: 20px;
+    }
+    .create-client button{
+        font-size: 13px;
+    }
+    .create-client h3{
+        font-size: 18px;
+    }
+    .select-doctor{
+        width: 100%;
+    }
+    .select-doctor.table{
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 15px;
+    }
+    .select-doctor.table select{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .select-doctor-btns{
+        align-self: center;
+    }
+    .appointment .scheds{
+        justify-content: center;
+    }
+    .create-client form input[type='text'],
+    .create-client form input[type='number'],
+    .create-client form input[type='date'],
+    .create-client form input[type='email'],
+    .create-client form select,
+    .create-client form label{
+        font-size: 15px;
+    }
+
+    .create-client form p{
+        font-size: 20px;
+    }
+
+    .create-client .form-actions button{
+        font-size: 13px;
+    }
+
+    .confirmation-popup.doctor h2{
+        font-size: 20px;
+    }
+    .confirmation-popup.doctor{
+        width: 400px;
+        height: 250px;
+    }
+    .confirmation-popup.doctor button{
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 720px) {
+    button{
+        font-size: 10px;
+    }
+    .client-main > h1{
+        font-size: 20px;
+    }
+    .client-table-filter{   
+        font-size: 12px;
+    }
+    input[type="text"] {
+        font-size: 12px;
+        align-self: center;
+        width: 100%;
+    }
+    input[type="date"] {
+        font-size: 12px;
+    }
+
+    .client-main-table > table th:nth-child(2), .client-main-table > table td:nth-child(2){
+        display: none;
+    }
+    .client-main-table > table th:nth-child(3), .client-main-table > table td:nth-child(3){
+        display: none;
+    }
+    .client-main-table > table th:nth-child(4), .client-main-table > table td:nth-child(4){
+        display: none;
+    }
+    .client-main-table > table th:nth-child(5), .client-main-table > table td:nth-child(5){
+        display: none;
+    }
+    .client-main-table > table tr, .client-main-table > table td, .client-main-table > table th {
+        font-size: 12px;
+    
+    }
+    .client-table-filter{   
+        padding: 15px 0px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .client-pagination > ul li{
+        font-size: 10px;
+    }
+
+    .client-details{
+        width: 95%;
+    }
+    .client-details h2{
+        font-size: 18px;
+    }
+    .client-table{
+        font-size: 12px;
+    }
+    .notes-section h3{
+        font-size: 18px;
+    }
+    .notes-section ul{
+        font-size: 12px;
+    }
+    .client-details > button{
+        font-size: 10px;
+    }
+    .notes-section > button{
+        font-size: 10px;
+    }
+    .table-actions button{
+        font-size: 8px;
+        padding: 8px, 5px;
+    }
+
+    .create-client{
+        width: 95%;
+    }
+    .create-client p{
+        font-size: 16px;
+    }
+    .create-client button{
+        font-size: 12px;
+    }
+    .create-client h3{
+        font-size: 15px;
+    }
+    .select-doctor{
+        width: 100%;
+    }
+    .select-doctor.table{
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 12px;
+    }
+    .select-doctor.table select{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .select-doctor-btns{
+        align-self: center;
+    }
+    .appointment .scheds{
+        justify-content: center;
+    }
+    .create-client form input[type='text'],
+    .create-client form input[type='number'],
+    .create-client form input[type='date'],
+    .create-client form input[type='email'],
+    .create-client form select,
+    .create-client form label{
+        font-size: 12px;
+    }
+
+    .create-client form p{
+        font-size: 16px;
+    }
+
+    .create-client .form-actions button{
+        font-size: 12px;
+    }
+
+
+    .confirmation-popup{
+        width: 300px;
+        height: 200px;
+    }
+    .confirmation-popup-content{
+        gap: 25px;
+    }
+    .confirmation-popup-content p{
+        text-align: center;
+        font-size: 12px;
+    }
+    .confirmation-buttons{
+        gap: 10px;
+    }
+    .confirmation-buttons button{
+        font-size: 12px;
+    }
+
+}
+
