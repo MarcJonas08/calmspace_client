@@ -19,7 +19,7 @@ const RegisterForm = ({ openRegForm, setOpenRegForm, setSchedSuccess, setSchedEr
   const [selectedBranch, setSelectedBranch] = useState(null);
 
   useEffect(() => {
-    fetch('http://89.116.21.45:8000/api/clinic/branches', {
+    fetch('https://89.116.21.45:8000/api/clinic/branches', {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${authTokens.access}`,
